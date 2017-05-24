@@ -1,63 +1,63 @@
-<!DOCTYPE html><!--remove on Codepen version-->
+<!DOCTYPE html>
 <html lang=en>
 <head>
   <title>Music Learning Style Assessment</title>
   <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="styles.css"> <!--remove on Codepen version-->
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
   <div class="container">
     <h1 id="title">Music Learning Style Assessment</h1>
+    <hr>
     <p id="description">
-
       Congratulations on taking the next step in your music journey!<br><br>
 
-      By answering these brief questions, we will both get an idea of where you are musically, where you'd like to go, and the best way for you to proceed. <br><br>
+      By completing this brief survey, we will get an idea of where you are musically, where you'd like to go, and the best way for you to proceed. <br><br>
       Learning how to play an instrument is an exciting journey, and it is important to have a learning system that best fits your learning style, personality, and preferences. <br><br>
 
       Take your time and have fun. <br><br>
     </p>
     <form id="survey-form">
-      <label id="name-label">*Name:
-        <input type="text" id="name" name="name" placeholder="Enter your name" autofocus required/></label>
+      <label id="name-label" class="question personal">*Name:
+        <input type="text" id="name" class="input-field" name="name" placeholder="Enter your name" autofocus required/></label>
         <br />
         <br />
-        <label id="email-label">*Email:
-          <input type="email" id="email" name="email" placeholder="Enter your email" required/></label>
+        <label id="email-label" class="question personal">*Email:
+          <input type="email" id="email" class="input-field" name="email" placeholder="Enter your email" required/></label>
           <br />
           <br />
-          <label id="number-label">*Age:
-            <input type="number" id="number" name="age" min="2" max="117" required/></label>
+          <label id="number-label" class="question personal">*Age:
+            <input type="number" id="number" class="input-field" placeholder="Enter your age" name="age" min="2" max="117" required/></label>
             <br />
             <br />
-            What instrument do you primarily play or want to learn how to play?<br>
-            <input type="text" /><br><br>
+            <span class="question">1. What instrument(s) do you play or want to learn how to play?</span><br>
+            <input type="text" class="input-field" placeholder="Your answer"><br><br>
 
-            How many years of experience playing do you have?<br>
+            <span class="question">2. How many years of experience playing do you have?</span><br>
             <input type="radio" name="xp" value="beginner" checked> 0-2<br>
             <input type="radio" name="xp" value="intermediate"> 3-5<br>
             <input type="radio" name="xp" value="seasoned"> 6-10<br>
             <input type="radio" name="xp" value="advanced"> More than 10 years<br><br>
 
-            When learning something new, where is the best place for you to do this?<br>
+            <span class="question">3. When learning something new, where is the best place for you to do this?</span><br>
             <div class="subTitle">Examples: bedroom, office, outdoors, library, studio, etc. </div>
-            <input type="text"><br><br>
+            <input type="text" class="input-field" placeholder="Your answer"><br><br>
 
-            What time of the day are you the most creative?
+            <span class="question">4. What time of the day are you the most creative?</span>
             <select id="dropdown">
-              <option value="Musician">Morning</option>
-              <option value="Producer">Afternoon</option>
-              <option value="Sound Designer">Evening</option>
-              <option value="Composer">Late Night</option>
+              <option value="morning">Morning</option>
+              <option value="afternoon">Afternoon</option>
+              <option value="evening">Evening</option>
+              <option value="late-night">Late Night</option>
             </select><br><br>
 
-            How would you prefer to learn?<br>
+            <span class="question">5. How would you prefer to learn?</span><br>
             <input type="radio" name="learn" value="Sight" checked> Sight Reading<br>
             <input type="radio" name="learn" value="Ear"> Ear Training<br>
             <input type="radio" name="learn" value="Both"> Both<br>
             <input type="radio" name="learn" value="Undecided"> I don't know yet<br><br>
 
-            Choose the learning styles that sound most appealing to you.<br>
+            <span class="question">6. Choose the learning styles that sound most appealing to you.</span><br>
             <input type="checkbox" name="style" value="teacher-solo">1-on-1 lessons from an instructor<br>
             <input type="checkbox" name="style" value="teacher-class">Class setting (instructor and classmates)<br>
             <input type="checkbox" name="style" value="Virtual">Virtual lessons with online instructor<br>
@@ -66,19 +66,19 @@
             <input type="checkbox" name="style" value="watching-musicians">Watching other musicians play<br>
             <input type="checkbox" name="style" value="other">Other<br><br>
 
-            What led you to wanting to learn how to play your instrument? What are your musical goals?
-            <textarea name="comment" placeholder="enter text here..."></textarea><br><br>
+            <span class="question">7. What led you to wanting to learn how to play your instrument? What are your musical goals?</span><br>
+            <textarea name="comment" class="text-field" placeholder="Your answer"></textarea><br><br>
 
-            What is your favorite genre(s) of music?
-            <input type="text" /><br><br>
+            <span class="question">8. What is your favorite genre(s) of music?
+            <input type="text" class="input-field" placeholder="Your answer"></span><br><br>
 
-            Any Comments or Questions?
-            <textarea name="comment" placeholder="Enter text here..."></textarea><br><br>
+            <span class="question">9. Any Comments or Questions?</span><br>
+            <textarea name="comment" class="text-field" placeholder="Your answer"></textarea><br><br>
 
             <input type="submit" id="submit" value="Submit">
 
           </form>
         </div>
-        <script type="text/javascript" src="script.js"></script> <!--remove on Codepen version-->
+        <script type="text/javascript" src="script.js"></script>
       </body>
       </html>
