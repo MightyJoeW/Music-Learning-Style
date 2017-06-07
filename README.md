@@ -1,4 +1,4 @@
-# Music Learning Style Assessment
+# [Music Learning Style Assessment](https://mightyjoew.github.io/Music-Learning-Style/)
 The Music Learning Style assessment is a brief survey designed to help aspiring musicians discover the learning style that best suits them. 
 
 ## Why is this important?
